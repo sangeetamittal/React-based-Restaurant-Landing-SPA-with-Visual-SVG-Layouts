@@ -1,0 +1,253 @@
+.reserve {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 1240px;
+    height: 945px;
+    margin: auto;
+    margin-bottom: 3rem;
+    background-color: #e6f5ec;
+}
+
+.reservation-container {
+    display: flex;
+}
+
+.reservation-container h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.reservation-container p {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #e6f4ed;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: left;
+    color: rgba(74, 73, 71, 1);
+}
+
+input,
+textarea {
+    height: 70px;
+    width: 294px;
+    padding: 0.75rem;
+    border-radius: 15px;
+    border: 1px solid rgba(182, 182, 182, 1);
+    background-color: rgba(250, 247, 240, 1);
+    font-size: 1rem;
+}
+
+textarea {
+    height: 95px;
+    width: 505px;
+    resize: none;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    width: 146px;
+    height: 51px;
+    padding: 0.8125rem 1.875rem;
+    background-color: rgba(75, 88, 60, 1);
+    color: white;
+    border: 1px solid rgba(182, 182, 182, 1);
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-self: start;
+    margin-left: 70px;
+}
+
+.submit-button:hover {
+    background-color: #2f3f23;
+}
+
+.reservation-info {
+    margin-top: 2rem;
+    background-color: #e0ede5;
+    padding: 1rem;
+    border-radius: 8px;
+    height: 402px;
+    width: 505px;
+    border-radius: 15px;
+}
+
+.reservation-info h4 {
+    margin: 1rem 0 0.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #4A4947;
+    background-color: #e0ede5;
+}
+
+.reservation-info p {
+    background-color: #e0ede5;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #6E6F6B;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+    background-color: #e0ede5;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #444;
+    transition: color 0.3s ease;
+    background-color: #e0ede5;
+}
+
+.social-icons img {
+    height: 48px;
+    width: 48px;
+    background-color: #e0ede5;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+input[type="date"] {
+    font-weight: normal;
+    font-family: inherit;
+}
+
+/* Hide number input spinner (Chrome, Safari) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+/* stylelint-disable-next-line property-no-vendor-prefix */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Hide calendar icon in Chrome */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.success-message {
+    background-color: rgb(228, 245, 236);
+    padding: 2rem;
+    border-radius: 12px;
+    color: #668466;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .reserve {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .reservation-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    .submit-button {
+        margin: 1rem auto 0;
+    }
+
+    .reservation-info {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .reserve h2 {
+        font-size: 2rem;
+    }
+
+    .reserve p {
+        font-size: 1.25rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+        height: auto;
+    }
+
+    .reservation-info h4 {
+        font-size: 1rem;
+    }
+
+    .reservation-info p {
+        font-size: 0.8rem;
+    }
+
+    .social-icons img {
+        height: 36px;
+        width: 36px;
+    }
+}

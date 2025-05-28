@@ -1,0 +1,32 @@
+.aboutus-container {
+  background-color: rgb(228, 245, 236);
+  padding: 2rem;
+  margin-top: 83rem;
+}
+
+.aboutus-section {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  gap: 2rem;
+}
+
+.aboutus-image {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.aboutus-text h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.aboutus-text p {
+  max-width: 700px;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+}

@@ -1,0 +1,19 @@
+.gallery-container{
+    text-align: center;
+}
+
+.gallery-title{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.gallery-grid{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery-img{
+    rx: 50;
+}

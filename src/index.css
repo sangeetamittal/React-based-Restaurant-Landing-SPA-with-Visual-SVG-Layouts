@@ -1,0 +1,13 @@
+* {
+    background-color: rgb(228, 245, 236);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}

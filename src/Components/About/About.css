@@ -1,0 +1,90 @@
+.about-container {
+  background-color: rgb(228, 245, 236);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-image {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 736px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 700px;
+  padding: 1rem;
+}
+
+.about-text h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Shrinks with screen */
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.about-text p {
+  font-size: clamp(1rem, 3.5vw, 1.75rem); /* Shrinks fluidly */
+  font-weight: 500;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Desktop & tablets above 601px */
+@media screen and (min-width: 601px) {
+  .about-section {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: clamp(250px, 40vw, 736px); /* NEW: responsive scaling */
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 1rem;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    padding: 1rem;
+  }
+
+  .about-text h2 {
+    font-size: clamp(1.25rem, 3vw, 2.25rem); /* Scales title */
+  }
+
+  .about-text p {
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem); /* Scales paragraph */
+  }
+}
+
+/* Optional tighter tweaks for very small screens */
+@media screen and (max-width: 600px) {
+  .about-text {
+    padding: 0 1rem;
+  }
+
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-image {
+    border-radius: 0.75rem;
+  }
+}

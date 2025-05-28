@@ -1,0 +1,136 @@
+.newsletter-container {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.newsletter-text {
+  flex: 1 1 300px;
+  background-color: black;
+}
+
+.newsletter-text h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: black;
+}
+
+.newsletter-text p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #ccc;
+  background-color: black;
+}
+
+.newsletter-form {
+  flex: 1 1 300px;
+  background-color: black;
+}
+
+.newsletter-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #666;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem;
+}
+
+.newsletter-input-wrapper .mail-icon {
+  color: #fff;
+  margin-right: 0.5rem;
+  background-color: #666;
+  height: 16px;
+  width: 16px;
+}
+
+.newsletter-input-wrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  flex-grow: 1;
+  height: 48px;
+  max-height: 96px;
+  max-width: 457px;
+  min-width: 315px;
+}
+
+.newsletter-input-wrapper input::placeholder {
+  color: white;
+}
+
+.newsletter-input-wrapper button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-input-wrapper button:hover {
+  background-color: #eee;
+}
+
+@media (max-width: 661px) {
+  .newsletter-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0rem;
+    overflow: hidden;
+    padding: 2rem 2rem;
+    padding-right: 3rem;
+  }
+
+  .newsletter-text{
+    margin-bottom: -12rem;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    margin-bottom: -8rem;
+  }
+
+  .newsletter-input-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .newsletter-input-wrapper input {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .newsletter-input-wrapper button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .mail-icon{
+    align-self: center;
+    margin-bottom: 0.25rem;
+  }
+
+  .newsletter-text {
+    width: 100%;
+  }
+}
