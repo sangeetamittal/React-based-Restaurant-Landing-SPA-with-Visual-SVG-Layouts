@@ -10,3 +10,10 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+Inspiration Figma Design:
+https://www.figma.com/design/cemdUn7Ny2dr8CqvhKtafn/Cafe-7?t=mesRtydvGkSBFZbu-1
+
+Deployed! Visite here:
+https://react-based-restaurant-landing-spa.vercel.app/
